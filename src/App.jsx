@@ -6,13 +6,15 @@ import NestedCheckbox from "./pages/NestedCheckbox";
 import NestedCheckTwo from "./pages/nestedCheckTwo";
 import Prep from "./pages/pre";
 import MouseTracker from "./pages/mouseTracker";
-<<<<<<< HEAD
 import Memoize from "./pages/memoize";
-=======
 import ExpensiveCalculation from "./pages/components/memo/expensiveCalc";
 import ParentComponent from "./pages/components/memo/Re-rendersChild ";
 import ParentComponentReactMemo from "./pages/components/memo/react.memo";
->>>>>>> a957516619532ddfefdbd86fec7eb623d7f7ec8f
+import ParentComponentCallback from "./pages/components/useCallback/useCallbackComponent";
+import SearchList from "./pages/components/useCallback/searchOptimise";
+import { ThemeProvider } from "./pages/components/useContext/themSwitch";
+import MainBody from "./pages/components/useContext/mainBody";
+import { AuthProvider } from "./pages/components/useContext/useAuth";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,14 +25,15 @@ function App() {
       {/* <NestedCheckTwo /> */}
       {/* <Prep/> */}
       {/* <MouseTracker /> */}
-<<<<<<< HEAD
-      <Memoize />
-=======
+      {/* <Memoize /> */}
       {/* <ExpensiveCalculation /> */}
       {/* <ParentComponent /> */}
-      <ParentComponentReactMemo />
-
->>>>>>> a957516619532ddfefdbd86fec7eb623d7f7ec8f
+      {/* <ParentComponentReactMemo /> */}
+      {/* <ParentComponentCallback /> */}
+      {/* <SearchList /> */}
+      <ThemeProvider>
+        <MainBody />
+      </ThemeProvider>
     </>
   );
 }
