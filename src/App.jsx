@@ -6,6 +6,7 @@ import NestedCheckbox from "./pages/NestedCheckbox";
 import NestedCheckTwo from "./pages/nestedCheckTwo";
 import Prep from "./pages/pre";
 import MouseTracker from "./pages/mouseTracker";
+import Memoize from "./pages/memoize";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,7 +16,8 @@ function App() {
       {/* <NestedCheckbox /> */}
       {/* <NestedCheckTwo /> */}
       {/* <Prep/> */}
-      <MouseTracker />
+      {/* <MouseTracker /> */}
+      <Memoize />
     </>
   );
 }
