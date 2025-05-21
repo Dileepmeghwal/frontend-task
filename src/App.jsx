@@ -7,14 +7,15 @@ import NestedCheckTwo from "./pages/nestedCheckTwo";
 import Prep from "./pages/pre";
 import MouseTracker from "./pages/mouseTracker";
 import Memoize from "./pages/memoize";
-import ExpensiveCalculation from "./pages/components/memo/expensiveCalc";
-import ParentComponent from "./pages/components/memo/Re-rendersChild ";
-import ParentComponentReactMemo from "./pages/components/memo/react.memo";
-import ParentComponentCallback from "./pages/components/useCallback/useCallbackComponent";
-import SearchList from "./pages/components/useCallback/searchOptimise";
-import { ThemeProvider } from "./pages/components/useContext/themSwitch";
-import MainBody from "./pages/components/useContext/mainBody";
-import { AuthProvider } from "./pages/components/useContext/useAuth";
+import ExpensiveCalculation from "./components/memo/expensiveCalc";
+import ParentComponent from "./components/memo/Re-rendersChild ";
+import ParentComponentReactMemo from "./components/memo/react.memo";
+import ParentComponentCallback from "./components/useCallback/useCallbackComponent";
+import SearchList from "./components/useCallback/searchOptimise";
+import { ThemeProvider } from "./components/useContext/themSwitch";
+import MainBody from "./components/useContext/mainBody";
+import { AuthProvider } from "./components/useContext/useAuth";
+import TrafficLight from "./pages/trafficLight";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,9 +32,10 @@ function App() {
       {/* <ParentComponentReactMemo /> */}
       {/* <ParentComponentCallback /> */}
       {/* <SearchList /> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <MainBody />
-      </ThemeProvider>
+      </ThemeProvider> */}
+      <TrafficLight />
     </>
   );
 }

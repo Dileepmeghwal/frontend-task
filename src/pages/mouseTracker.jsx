@@ -17,10 +17,9 @@ const MouseTracker = () => {
   }, [count]);
 
   useEffect(() => {
-    const title =()=>{
-
-        document.title = "Good boy";
-    }
+    const title = () => {
+      document.title = "Good boy";
+    };
 
     return () => document.title;
   }, [count]);

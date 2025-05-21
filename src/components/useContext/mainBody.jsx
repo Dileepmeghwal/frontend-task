@@ -5,7 +5,7 @@ import { useAuth } from "./useAuth";
 const MainBody = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const { user, logout } = useAuth();
-  console.log(user);
+
 
   const [count, setCount] = useState(0);
   //   const handleClick = useCallback(() => {
@@ -14,7 +14,6 @@ const MainBody = () => {
   //   }, [count]);
 
   const handleClick = () => {
-    console.log("count render");
     setCount(count + 1);
   };
   return (
