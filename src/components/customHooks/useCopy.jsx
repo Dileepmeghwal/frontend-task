@@ -1,5 +1,5 @@
 import { useState } from "react";
-import copy from "copy-to-clipboard";
+// import copy from "copy-to-clipboard";
 
 export const useCopyToClipboard = () => {
     const [copied,setCopied]=useState(false)

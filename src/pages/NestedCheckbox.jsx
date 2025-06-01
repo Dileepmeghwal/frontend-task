@@ -4,8 +4,7 @@ import { list } from "./list";
 const NestedCheckbox = () => {
   const [selectedItems, setSelectedItems] = useState([]);
 
-  console.log('s',selectedItems);
-
+  console.log("s", selectedItems);
 
   const allSelected = selectedItems.length === list.length;
   const handleSelectAll = (e) => {
@@ -45,7 +44,7 @@ const NestedCheckbox = () => {
             checked={selectedItems.includes(item.id)}
             onChange={(e) => handleSelect(e, item.id)}
           />
-          <label htmlFor="">{item?.name}</label>
+          <label htmlFor="">{item?.name} </label>
         </div>
       ))}
     </div>

@@ -16,6 +16,9 @@ import { ThemeProvider } from "./components/useContext/themSwitch";
 import MainBody from "./components/useContext/mainBody";
 import { AuthProvider } from "./components/useContext/useAuth";
 import TrafficLight from "./pages/trafficLight";
+import DemoUseCallback from "./components/useCallback/demo";
+import MainComponent from "./components/useCallback/test";
+import MemoOne from "./components/memo/memo.one";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,7 +38,10 @@ function App() {
       {/* <ThemeProvider>
         <MainBody />
       </ThemeProvider> */}
-      <TrafficLight />
+      {/* <TrafficLight /> */}
+      {/* <DemoUseCallback/> */}
+      {/* <MainComponent/> */}
+      <MemoOne />
     </>
   );
 }

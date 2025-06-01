@@ -23,7 +23,6 @@ const ExpensiveCalculation = () => {
       <p>Count: {count}</p>
       {/* <p>expensive data: {expensiveCalc(count)}</p> */}
       <p>memoised data: {memoiseValue}</p>
-
       <button onClick={() => setCount(count + 1)}>Inc</button>
       <button onClick={() => setOtherState(otherState + 1)}>
         Update other state {otherState}
