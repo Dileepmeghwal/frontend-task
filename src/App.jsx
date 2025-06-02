@@ -19,6 +19,7 @@ import TrafficLight from "./pages/trafficLight";
 import DemoUseCallback from "./components/useCallback/demo";
 import MainComponent from "./components/useCallback/test";
 import MemoOne from "./components/memo/memo.one";
+import SearchFilter from "./pages/searchFilter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -41,7 +42,8 @@ function App() {
       {/* <TrafficLight /> */}
       {/* <DemoUseCallback/> */}
       {/* <MainComponent/> */}
-      <MemoOne />
+      {/* <MemoOne /> */}
+      <SearchFilter />
     </>
   );
 }

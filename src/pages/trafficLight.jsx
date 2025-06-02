@@ -4,7 +4,7 @@ import { useCopyToClipboard } from "../components/customHooks/useCopy";
 const TrafficLight = () => {
   // State to track the current light
   const [currentLight, setCurrentLight] = useState("green");
-  const [copied, handleCopyText ] = useCopyToClipboard();
+  const [copied, handleCopyText] = useCopyToClipboard();
 
   // Light durations in milliseconds
   const durations = {
